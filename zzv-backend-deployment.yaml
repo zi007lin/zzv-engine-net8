@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zzv-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zzv-backend
+  template:
+    metadata:
+      labels:
+        app: zzv-backend
+    spec:
+      containers:
+      - name: zzv-backend
+        image: zzv-backend:latest
+        ports:
+        - containerPort: 80
