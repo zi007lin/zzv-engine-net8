@@ -1,0 +1,6 @@
+@zzv_engine_net8_HostAddress = http://localhost:5267
+
+GET {{zzv_engine_net8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
